@@ -1,0 +1,465 @@
+/*All the properties of my website*/
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+body {
+    font-family:Arial,sans-serif;
+    font-size:100%;
+    color:#010a50;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+#main-content {
+    flex:1;
+}
+#welcome-text{
+    display: flex;
+    flex: 1;
+    padding:0px;   
+    position: relative;
+    margin-top: -5px;
+    color:#010a50;
+    font-weight: bolder;
+}
+#greeting {
+    text-align: left;
+    padding: 1px;
+    flex:1;
+    padding-top: 3px;
+    font-display: flex;
+    position: relative;
+    align-items: center;
+    color:#010a50
+}
+.bg-blue{
+    background-color: #010a50;
+}
+.navbar {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align:left;
+    background-color: #010a50;
+    padding: 0 2.5rem 0.5rem 1.5rem;
+    width:1920px;
+}
+.navbar-brand {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+.nav-item {
+    padding: 0 10px;
+}
+.nav-link {
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    font-weight: 400;
+   }
+.nav-link:hover {
+    color:#000000;
+    text-decoration: solid underline ;
+}
+/*Footer*/
+#footer {
+    background-color:#010a50;
+    padding-bottom: 10px;
+    width:max-content;
+    justify-content: center;
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    align-items:center;
+    width: 1920px;
+    color:#ffffff;
+}
+/*Home Page*/
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 50px;  
+    padding-top: 70px;  
+}
+/*Book Ticket Button*/
+#book-ticket-button {
+    margin-bottom: 125px;
+    shape-outside: circle(100%);
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5f5f5;
+    position: relative;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0px;
+    color: #010a50;
+    text-decoration: solid;
+    text-shadow: #000000;
+    border:#010a50 solid 2px;
+    display: inline-flex;
+    gap: 3px;
+    align-items: center;
+    flex-direction: row;
+    width: 227px;
+}
+#book-ticket-button {
+    align-items: center;
+    justify-self: center;
+}
+
+#book-ticket-text {
+    background-color: none;  
+    color: #010a50;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-align:center;
+}
+#book-ticket-button:hover {
+    background-color: #010a50;
+    color:rgb(255,255,255);
+    border-color:#010a50 solid 40px;
+    filter:saturate(100px);
+    box-shadow: #010a50;
+}
+#book-ticket-button::after , .book-ticket-button::before {
+    content: none;
+}
+#book-ticket-button-section {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;    
+}
+/*Header*/
+h1,h6 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    color:#ffffff;
+    background-color:#010a50;
+    font-weight: bolder;
+}
+h5 {
+    color:#010a50;
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    font-weight: 350;
+}
+/*LOGO */
+.logo{
+    position-area: left;
+    gap:10px;
+}
+
+/*Slogan*/
+.slogan {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration:dotted;
+
+}
+/*Sign In Button*/ 
+#btn {
+    font-family: 'Times New Roman', Times, serif;
+    border-color:#000000 2px solid;
+    font-weight: bold;
+    color:#010a50;
+    background-color: #f5f5f5;
+}
+#btn:hover {
+    color:#ffffff;
+    background-color: #010a50;
+    font-weight: bolder;
+    border:#010a50;
+    cursor: pointer;
+}
+/*Dropdown menu*/
+.dropdown-menu {
+    display:none;
+    position:absolute;
+    background-color: #010a50;
+    list-style:none;
+    margin:0;
+    padding:0;
+    border: 3px solid #f5f5f5;
+}
+.dropdown:hover .dropdown-menu {
+    display:block;
+}
+.dropdown-menu li {
+    padding: 7px 14px;
+    background-color:#010a50;
+    color:#ffffff;
+}
+.dropdown-menu li a {
+    text-decoration: solid;
+    font-weight: bolder 10;
+    color:#ffffff;
+    background-color: none;
+}
+.dropdown-menu li a:hover{
+    color:#ffffff;
+    font-weight: bolder;
+    background-color: #010a50;
+}
+#destinationsMenu {
+    max-height: 285px;
+    max-width: 210px;
+    overflow-y: auto;
+}
+/*Booking Bar*/ 
+#bookingBar {
+    max-height: 520px;
+    display:none;
+    padding: 22px;
+    margin-bottom :21px;
+    padding-bottom: 1.5rem;
+    background-color: #010a50;
+    border: #010a50 2px solid;
+    border-radius: 6px;
+    color:#f5f5f5;
+    width: 410px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    text-align: center;
+}
+#bookingBar h5 {
+    color:#f5f5f5;
+    background-color:#010a50;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.fas {
+    margin-right: 8px;
+}
+.dropdown-scroll {
+    max-height: 206px;
+    overflow-y: auto;
+}
+h3 {
+    color:#010a50;
+    text-align: left;
+    text-decoration: bold;
+}
+label {
+    color :#f5f5f5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+#search-button,.btn-primary mt-3{
+    align-items: center;
+    border-color: #f5f5f5;
+    justify-content: center;
+    flex-direction:row;
+    width: 150px;
+    font-weight:  200;
+    background-color: #010a50;
+    color:#ffffff;
+}
+#search-button,.btn-primary mt-3:hover {
+    background-color:#ffffff;
+    border-color: black;
+    color:#010a50;
+}
+/*Carousel*/
+.carousel-slide mt-4 {
+    width:100%;
+    height:min-content;
+    flex-direction: row;
+    align-items:center baseline;
+    justify-content: center;
+    padding-top: -100px;
+}
+#destinationFoto {
+    text-align: center;
+    display: none;
+    padding: 16px;
+}
+#destinationName {
+    font-size: 4rem;
+    font-weight: bold;
+    color:#010a50;
+    text-align: center;
+}
+#destinationImage {
+    width: 55%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+#description {
+    font-size: 1.8rem;
+    color:#010a50;
+    text-align: center;
+    margin-top: 15px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Ticket Type Check Box*/
+.form-check-label {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    color:#010a50;
+}
+/*Pricing Cards*/
+.pricing-container, .pricing-cards{
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 350px;
+    padding: 25px;
+    text-align:center;
+    size: 300px;
+    display: flex;
+}
+.pricing-container #basic {
+    background-color: white;
+    border: #010a50 2px solid;
+    border-radius: 3px;
+    padding-bottom: 5px;
+    margin-left: 11px;
+    margin-right: 11px;
+    text-align: center;
+    width: 250px;
+}
+#basic .select-btn {
+    justify-content: center;
+    border-style:  #010a50 ;
+    color: #010a50;
+    font-weight: bold;
+    background-color:whitesmoke;
+}
+#basic .select-btn:hover{
+    background-color:#010a50;
+    color:#f5f5f5;
+    cursor:pointer;
+}
+.features {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:left;
+    padding-top: 11px;
+}
+.details {
+    padding-top: 10px;
+    color:#010a50;
+    text-align: center;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.price {
+    color: #010a50;
+    font-weight: bold;
+    text-align: center;
+}
+.plan-title {
+    font-weight:bolder;
+    color:#010a50;
+    text-align: center;
+}
+.pricing-container #flex {
+    background-color:color-mix(in srgb, whitesmoke 40%, dodgerblue 60%);
+    border: #010a50 2px solid;
+    border-radius: 3px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 250px;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+#basic .select-btn {
+    justify-content: center;
+    border-style:  #010a50 ;
+    color: #010a50;
+    font-weight: bold;
+    background-color:whitesmoke;
+}
+#flex .select-btn:hover{
+    background-color:#010a50;
+    color:#f5f5f5;
+    cursor:pointer;
+}
+.pricing-container #comfort {
+    background-color:color-mix(in srgb, aqua 70%, whitesmoke 30%);
+    border: #010a50 2px solid;
+    border-radius: 3px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 250px;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+#comfort .select-btn {
+    justify-content: center;
+    border-style:  #010a50 ;
+    color: #010a50;
+    font-weight: bold;
+    background-color:whitesmoke;
+}
+#comfort .select-btn:hover{
+    background-color:#010a50;
+    color:#f5f5f5;
+    cursor:pointer;
+}
+.pricing-container #buisness {
+    background-color:coral;
+    border: #010a50 2px solid;
+    border-radius: 3px;
+    padding-bottom: 5px;
+    padding-top: 12px;
+    text-align: center;
+    margin-left: 11px;
+    margin-right: 11px;
+    width: 250px;
+}
+#buisness .select-btn {
+    justify-content: center;
+    border-style:  #010a50 ;
+    color: #010a50;
+    font-weight: bold;
+    background-color:whitesmoke;
+}
+#buisness .select-btn:hover{
+    background-color:#010a50;
+    color:#f5f5f5;
+    cursor:pointer;
+}
+/*Cancel button*/
+#cancel ,.btn-primary mt-5{
+    margin-left: 11px;
+    margin-right: 11px;
+    font-weight: bold;
+    margin-bottom: 1px;
+    display: none;
+    text-align: center;
+    background-color:dodgerblue;
+    color: white;
+    border: #010a50 2px;
+    padding-top: 2px;
+    width: 250px;
+    display: none;
+    padding: 15px;   
+    justify-items: center;
+    flex-direction: row;
+}
+/*Make it responsive for phones*/ 
+@media only screen and (max-width: 768px) {
+    [class*=col-]  {
+        width: 100%;
+    }
+}
